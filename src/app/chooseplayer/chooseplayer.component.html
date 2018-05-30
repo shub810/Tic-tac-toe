@@ -1,0 +1,35 @@
+<div class="text-align-left" >
+    <div class="col-sm-6">
+        <h2>Click on Symbol</h2>
+        <div class="row">
+            <div class="col-sm-6 font-size-25px">
+                Symbol (Player 1) :
+            </div>
+            <div class="col-sm-6" *ngIf="isSymbolChoosen">
+                <img class="imgSize" src="../assets/images/tic-tac-toe-{{imgP1}}.png" alt="" srcset="">  
+            </div>
+        </div>
+        <div class="row" *ngIf="isComputer">
+            <div class="col-sm-6 font-size-25px" >
+                Symbol (Computer) : 
+            </div>
+            <div class="col-sm-6" *ngIf="isSymbolChoosen"> 
+                <img class="imgSize" src="../assets/images/tic-tac-toe-{{imgP2}}.png" alt="" srcset="">  
+            </div>
+        </div>
+        <div class="row" *ngIf="!isComputer">
+            <div class="col-sm-6 font-size-25px" >
+                Symbol (Player 2) : 
+            </div>
+            <div class="col-sm-6" *ngIf="isSymbolChoosen">
+                <img class="imgSize" src="../assets/images/tic-tac-toe-{{imgP2}}.png" alt="" srcset="">  
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6" *ngIf="!isSymbolChoosen" style="margin-top: 15px;">
+        <h3>Which one suits you?</h3>
+        <img class="imgSize imgBorder" src="../assets/images/tic-tac-toe-O.png" alt="" srcset="" (click)="onImgClicked('O')">
+        <span style="font-size: 20px; padding: 10px;">Or</span>
+        <img class="imgSize imgBorder" src="../assets/images/tic-tac-toe-X.png" alt="" srcset="" (click)="onImgClicked('X');">
+    </div>
+</div>

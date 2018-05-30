@@ -1,0 +1,37 @@
+<table class="float-center margin-top-20">
+    <tr>
+        <td (click)="insertSymbol(1)">
+            <img *ngIf="cellNumber.has(1) && cellNumber.get(1).status" class="imgSize" src="../assets/images/tic-tac-toe-{{cellNumber.get(1).imgString}}.png" alt="" srcset="">              
+        </td>
+        <td (click)="insertSymbol(2)">
+            <img *ngIf="cellNumber.has(2) && cellNumber.get(2).status" class="imgSize" src="../assets/images/tic-tac-toe-{{cellNumber.get(2).imgString}}.png" alt="" srcset="">                          
+        </td>
+        <td (click)="insertSymbol(3)">
+            <img *ngIf="cellNumber.has(3) && cellNumber.get(3).status" class="imgSize" src="../assets/images/tic-tac-toe-{{cellNumber.get(3).imgString}}.png" alt="" srcset="">                          
+        </td>
+    </tr>
+    <tr>
+        <td (click)="insertSymbol(4)">
+            <img *ngIf="cellNumber.has(4) && cellNumber.get(4).status" class="imgSize" src="../assets/images/tic-tac-toe-{{cellNumber.get(4).imgString}}.png" alt="" srcset="">                          
+        </td>
+        <td (click)="insertSymbol(5)">
+            <img *ngIf="cellNumber.has(5) && cellNumber.get(5).status" class="imgSize" src="../assets/images/tic-tac-toe-{{cellNumber.get(5).imgString}}.png" alt="" srcset="">                          
+        </td>
+        <td (click)="insertSymbol(6)">
+            <img *ngIf="cellNumber.has(6) && cellNumber.get(6).status" class="imgSize" src="../assets/images/tic-tac-toe-{{cellNumber.get(6).imgString}}.png" alt="" srcset="">                          
+        </td>          
+    </tr>
+    <tr>
+        <td (click)="insertSymbol(7)">
+            <img *ngIf="cellNumber.has(7) && cellNumber.get(7).status" class="imgSize" src="../assets/images/tic-tac-toe-{{cellNumber.get(7).imgString}}.png" alt="" srcset="">                          
+        </td>
+        <td (click)="insertSymbol(8)">
+            <img *ngIf="cellNumber.has(8) && cellNumber.get(8).status" class="imgSize" src="../assets/images/tic-tac-toe-{{cellNumber.get(8).imgString}}.png" alt="" srcset="">                          
+        </td>
+        <td (click)="insertSymbol(9)">
+            <img *ngIf="cellNumber.has(9) && cellNumber.get(9).status" class="imgSize" src="../assets/images/tic-tac-toe-{{cellNumber.get(9).imgString}}.png" alt="" srcset="">                          
+        </td>           
+    </tr>
+</table>
+<button class="btn btn-primary bgColor-reset margin-top-20" (click)="resetGame()">Reset Game</button>
+

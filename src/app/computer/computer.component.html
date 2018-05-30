@@ -1,0 +1,17 @@
+<div class="row">
+    <div class="col-sm-12">
+        <choose-player [isComputer]="flagComputer"
+        (sendObj)="recieveObj($event)"></choose-player>
+    </div>
+</div>
+<div class="row" *ngIf="isSymbolChoosen">
+    <div class="col-sm-12">
+        <button class="btn btn-secondary font-size-25px width-20p" [class.bgColor-start]="applyStartClass" [class.bgColor-stop]="applyStopClass" (click)="startGame()">{{gameType}}</button>
+    </div>
+    <div class="col-sm-12" *ngIf="isGameStart">
+        <start-game [player1Symbol]="imgP1"
+                    [player2Symbol]="imgP2"
+                    [isComputer]="isComputer">
+        </start-game>
+    </div>
+</div>

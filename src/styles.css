@@ -1,1 +1,58 @@
 /* You can add global styles to this file, and also import other style files */
+tr, td {
+    border: 3px solid black;
+    padding: 20px;
+    width: 150px;
+    height: 100px;
+}
+
+.float-center {
+    margin: 0 auto;
+}
+
+.width-50p {
+    width: 50%;
+}
+
+.width-20p {
+    width: 20%;
+}
+
+.bgColor-stop {
+    background: #d10000b8;
+}
+
+.bgColor-start {
+    background: #0dd100b8;
+}
+
+.bgColor-reset {
+    background: #576f1e;
+}
+
+.margin-top-20 {
+    margin-top: 20px;
+}
+
+.font-size-30px {
+    font-size: 30px;
+}
+
+.font-size-25px {
+    font-size: 25px;
+}
+
+.text-align-left {
+    text-align: left
+}
+
+.imgSize {
+    width: 50px;
+    height: 50px;
+}
+
+.imgBorder {
+    border: 2px solid #171716;
+    padding: 5px;
+    border-style: dashed;
+}
